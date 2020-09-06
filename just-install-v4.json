@@ -1478,8 +1478,8 @@
     "musescore": {
       "installer": {
         "kind": "msi",
-        "x86_64": "https://cdn.jsdelivr.net/musescore/v3.5/MuseScore-3.5.0-x86_64.msi",
-        "x86": "https://cdn.jsdelivr.net/musescore/v3.5/MuseScore-3.5.0-x86.msi"
+        "x86_64": "https://cdn.jsdelivr.net/musescore/v3.5/MuseScore-{{.version}}-x86_64.msi",
+        "x86": "https://cdn.jsdelivr.net/musescore/v3.5/MuseScore-{{.version}}-x86.msi"
       },
       "version": "3.5.0"
     },
@@ -1628,6 +1628,14 @@
         "x86": "https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.5.zip"
       },
       "version": "0.9.5"
+    },
+    "openshot": {
+      "installer": {
+        "kind": "innosetup",
+        "x86": "https://github.com/OpenShot/openshot-qt/releases/download/v{{.version}}/OpenShot-v{{.version}}-x86.exe",
+        "x86_64": "https://github.com/OpenShot/openshot-qt/releases/download/v{{.version}}/OpenShot-v{{.version}}-x86_64.exe"
+      },
+      "version": "2.5.1"
     },
     "openssh": {
       "installer": {
@@ -2009,6 +2017,13 @@
       },
       "version": "3.11"
     },
+    "sciebo": {
+      "installer": {
+        "kind": "msi",
+        "x86": "https://www.sciebo.de/install/sciebo-{{.version}}.msi"
+      },
+      "version": "2.6.2.2058"
+    },
     "sdm": {
       "installer": {
         "kind": "msi",
@@ -2217,6 +2232,16 @@
         "x86": "https://telegram.org/dl/desktop/win"
       },
       "version": "latest"
+    },
+    "texstudio": {
+      "installer": {
+        "kind": "nsis",
+        "options": {
+          "extension": ".exe"
+        },
+        "x86": "https://github.com/texstudio-org/texstudio/releases/download/{{.version}}/texstudio-{{.version}}-win-qt5.exe"
+      },
+      "version": "3.0.1"
     },
     "thunderbird": {
       "installer": {
@@ -2836,6 +2861,13 @@
         "x86": "https://github.com/ytdl-org/youtube-dl/releases/download/2020.07.28/youtube-dl.exe"
       },
       "version": "2020.07.28"
+    },
+    "zoom": {
+      "installer": {
+        "kind": "msi",
+        "x86": "https://www.zoom.us/client/latest/ZoomInstallerFull.msi"
+      },
+      "version": "latest"
     }
   }
 }
